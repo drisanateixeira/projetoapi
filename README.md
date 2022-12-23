@@ -21,7 +21,7 @@ The project was developed using the following technologies
 ```bash
 
     # clone
-    $ git clone https://github.com/drisanateixeira/
+    $ git clone https://github.com/drisanateixeira/projetoapi.git
 
     # install dependencies and Run Tests
     $ mvn clean test -Dtest=pageObjects.ActivitieApiPage
