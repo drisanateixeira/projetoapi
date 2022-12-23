@@ -1,0 +1,190 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "title": "Root Schema",
+    "type": "array",
+    "default": [],
+    "items": {
+        "title": "A Schema",
+        "type": "object",
+        "default": {},
+        "required": [
+            "id",
+            "name",
+            "username",
+            "email",
+            "address",
+            "phone",
+            "website",
+            "company"
+        ],
+        "properties": {
+            "id": {
+                "title": "The id Schema",
+                "type": "integer",
+                "default": 0,
+                "examples": [
+                    1
+                ]
+            },
+            "name": {
+                "title": "The name Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Leanne Graham"
+                ]
+            },
+            "username": {
+                "title": "The username Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Bret"
+                ]
+            },
+            "email": {
+                "title": "The email Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Sincere@april.biz"
+                ]
+            },
+            "address": {
+                "title": "The address Schema",
+                "type": "object",
+                "default": {},
+                "required": [
+                    "street",
+                    "suite",
+                    "city",
+                    "zipcode",
+                    "geo"
+                ],
+                "properties": {
+                    "street": {
+                        "title": "The street Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Kulas Light"
+                        ]
+                    },
+                    "suite": {
+                        "title": "The suite Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Apt. 556"
+                        ]
+                    },
+                    "city": {
+                        "title": "The city Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Gwenborough"
+                        ]
+                    },
+                    "zipcode": {
+                        "title": "The zipcode Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "92998-3874"
+                        ]
+                    },
+                    "geo": {
+                        "title": "The geo Schema",
+                        "type": "object",
+                        "default": {},
+                        "required": [
+                            "lat",
+                            "lng"
+                        ],
+                        "properties": {
+                            "lat": {
+                                "title": "The lat Schema",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "-37.3159"
+                                ]
+                            },
+                            "lng": {
+                                "title": "The lng Schema",
+                                "type": "string",
+                                "default": "",
+                                "examples": [
+                                    "81.1496"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "lat": "-37.3159",
+                            "lng": "81.1496"
+                        }]
+                    }
+                }
+            },
+            "phone": {
+                "title": "The phone Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "1-770-736-8031 x56442"
+                ]
+            },
+            "website": {
+                "title": "The website Schema",
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "hildegard.org"
+                ]
+            },
+            "company": {
+                "title": "The company Schema",
+                "type": "object",
+                "default": {},
+                "required": [
+                    "name",
+                    "catchPhrase",
+                    "bs"
+                ],
+                "properties": {
+                    "name": {
+                        "title": "The name Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Romaguera-Crona"
+                        ]
+                    },
+                    "catchPhrase": {
+                        "title": "The catchPhrase Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Multi-layered client-server neural-net"
+                        ]
+                    },
+                    "bs": {
+                        "title": "The bs Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "harness real-time e-markets"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "name": "Romaguera-Crona",
+                    "catchPhrase": "Multi-layered client-server neural-net",
+                    "bs": "harness real-time e-markets"
+                }]
+            }
+        }
+    }
+}
